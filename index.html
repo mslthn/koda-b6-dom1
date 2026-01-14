@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="abc">Konversi suhu</h1>
+    <div id="content"> Celcius = 35</div>
+    <p id="convert"></p>
+
+    <script>
+        // const ps = document.querySelector("#abc")
+        // const ps = document.getElementsByTagName("p")
+        // console.log(ps)
+        const C = 35;
+        const toReamur = 4/5 * C;
+        const toFahrenheit = (9/5) * C + 32;
+        const toKelvin = C + 273;
+        
+        // let conv = document.getElementById("convert")
+        // conv.textContent = "hasil konversi ke fahrenheit =", toFahrenheit;
+        // conv.textContent = toKelvin;
+        // conv.textContent = toReamur;
+        const fahrenheit = document.createElement("p");
+        fahrenheit.textContent = `hasil knversi ke fahrenheit ${toFahrenheit}`;
+        document.getElementById("convert").appendChild(fahrenheit)
+
+        const reamur = document.createElement("p");
+        reamur.textContent = `hasil knversi ke reamur ${toReamur}`;
+        document.getElementById("convert").appendChild(reamur)
+
+        const kelvin = document.createElement("p");
+        kelvin.textContent = `hasil konversi ke kelvin = ${toKelvin}`;
+        document.getElementById("convert").appendChild(kelvin)
+        
+    </script>
+</body>
+</html>
